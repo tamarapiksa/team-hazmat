@@ -2,11 +2,7 @@
 
 Team Members:
 
-Kalai Ramea 
-Marios Dardas
-Anastassios Dardas
-Tamara Piksa
-Lydia Montagnese
+Kalai Ramea, Marios Dardas, Anastassios Dardas, Tamara Piksa, Lydia Montagnese
 
 Usage:
 
