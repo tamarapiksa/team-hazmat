@@ -1,6 +1,6 @@
 #team-hazmat
 
-<heading>Team Members:</heading>
+#Team Members
 
 Kalai Ramea, Marios Dardas, Anastassios Dardas, Tamara Piksa, Lydia Montagnese
 
