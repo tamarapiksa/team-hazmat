@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hazmap Team</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css'>
+     <script src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'>
+     </script>
+     <script src='http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js'>
+     </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="img/th-logo.png" id="logo"/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <h2>Hazmap</h2><ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about" id="nav-titles">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team" id="nav-titles">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact" id="nav-titles">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+     
+            <div id='map' style='margin-top:50px; width: 100%; height: 500px; position: relative;'
+            class='leaflet-container leaflet-touch leaflet-fade-anim' tabindex='0'>
+            </div>
+            
+            <script>
+                var map = L.map('map').setView([39.519, -95.197], 4);
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+               var points = [[37.41,-71.43,17],
+                [41.23,-72.39,20],
+                [39.194,-80.123,19],
+                [37.817,-101.38,350],
+                [34.844,-106.35,250],
+                [42.24,-71.58,1000],
+                [43.121,-79.605,2500],
+                [37.55,-122.43,3500],
+                                ];
+                var heat = L.heatLayer(points, {
+                radius: 25,
+                opacity: 0.7,
+                blur: 20,
+                }).addTo(map);</script>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <hr class="light">
+                    <p class="text-faded">HazMap aims at helping people identify the highest instance of damage caused by hazmat incidents in the United States.</p>
+
+<p class="text-faded">Using maching learning, HazMap predicts future hazmat incidents at city level by cross-referencing the type of substance released during a given hazmat incident (explosive, flammable, etc.), type of freight transport, quantity of substance released, total capacity of the container, and total worth of the container.</p>
+
+<p class="text-faded">The future data on HazMap has been learned from the current provided hazmat incident data (see Data Sources). Our analysis determines whether future incidents can be explained by the most common factors present in past incidents. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Meet the Team</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src = "img/kalai.jpg" class="wow bounceIn text-primary" id="pic">
+                        <h3>Kalai</h3>
+                        <p class="text-muted">kramea@ucdavis.edu</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src = "img/marios.jpg" class="wow bounceIn text-primary" id="pic" data-wow-delay=".1s"></i>
+                        <h3>Marios</h3>
+                        <p class="text-muted">mzdard16@g.holycross.edu</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src = "img/tasos.jpg" class=" wow bounceIn text-primary" id="pic" data-wow-delay=".2s"></i>
+                        <h3>Tasos</h3>
+                        <p class="text-muted">dardasa@mcmaster.ca</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src = "img/tamara.jpg" class="wow bounceIn text-primary" id="pic" data-wow-delay=".3s"></i>
+                        <h3>Tamara</h3>
+                        <p class="text-muted">tamara.piksa@gmail.com</p>
+                    </div>
+                </div>
+                  <div class="text-center">
+                    <div class="service-box">
+                        <img src = "img/lydia.jpg" class="wow bounceIn text-primary" id="pic" data-wow-delay=".3s"></i>
+                        <h3>Lydia</h3>
+                        <p class="text-muted">lydia@givdo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">hazmap.team@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
