@@ -1,10 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: gainsboro;
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-size: 20px;
+}
+
 /*HOME PAGE*/
 
-
+header {
+  height: 20%;
+}
 
 nav {
-  border-bottom: 1px solid gainsboro;
   width: 100%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 img {
@@ -24,4 +42,29 @@ li {
 
 a {
   text-decoration: none;
+}
+
+img {
+  height: 152px;
+  width: auto;
+  margin-left: 1%;
+  margin-top: 1%;
+  display: inline-block;
+}
+
+.graph-box {
+  position: absolute;
+  width: 282px;
+  top: 6%;
+  left: 23%;
+}
+
+h1 {
+  margin-left: 1%;
+  margin-top: -4%;
+}
+
+.map-image {
+  height: 678px;
+  width: auto;
 }

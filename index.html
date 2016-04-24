@@ -2,20 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/stylesheets/normalize.css">
+    <link rel="styleshet" type="text/css" href="vendors/stylesheets/grid.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
     <title>TEAM HAZMAT</title>
   </head>
   <body>
-    <nav>
-      <div class="row">
-        <img src="assets/images/th-logo.png" alt="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Data</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
+    <header>
+      <div class="hero-box">
+        <img src="assets/images/th-logo.png">
+      <div class="graph-box">
+         <script src="assets/js/map.js"></script>
       </div>
-    </nav>
+      </div>
+    </header>
+    <script src="https://www.d3js.org/d3.v3.min.js"></script>
+    <script src="https://www.d3js.org/queue.v1.min.js"></script>
+    <script src="https://www.d3js.org/topojson.v1.min.js"></script>
   </body>
 </html>
