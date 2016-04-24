@@ -4,7 +4,7 @@
 
 Kalai Ramea, Marios Dardas, Anastassios Dardas, Tamara Piksa, Lydia Montagnese
 
-<heading>Usage:</heading>
+#Usage
 
 HazMap aims at helping people identify the highest instance of damage caused by hazmat incidents in the United States.
 
@@ -12,7 +12,7 @@ Using maching learning, HazMap predicts future hazmat incidents at city level by
 
 The future data on HazMap has been learned from the current provided hazmat incident data (see Data Sources). Our analysis determines whether future incidents can be explained by the most common factors present in past incidents. 
 
-<heading>Data Sources:</heading>
+#Data Sources
 
 Bayes Hack Data
 https://github.com/bayesimpact/bayeshack-transportation-hazmat/tree/master/data
